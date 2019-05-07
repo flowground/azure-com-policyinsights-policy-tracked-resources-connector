@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceId": {
+            "required": true,
+            "type": "string"
+        },
+        "policyTrackedResourcesResource": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "default"
+            ]
+        },
+        "_top": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
